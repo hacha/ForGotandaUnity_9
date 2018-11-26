@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Step8
-  m_Shader: {fileID: 4800000, guid: ca92f4f05f0a743f19dc490211ea6de4, type: 3}
+  m_Name: Omake
+  m_Shader: {fileID: 4800000, guid: eb8a68c89ba764302b06f13c065032e5, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -56,29 +56,34 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
-    - _CircleSpeed: 11.3
+    - _CircleSize: 0.44094488
+    - _CircleSpeed: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _HueMax: 0.86614174
-    - _HueMin: 0.45
+    - _HueMax: 0.62992126
+    - _HueMin: 0.25984251
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Param1: -1.4999993
-    - _Param2: -0.2
-    - _Param3: 0.65
-    - _Param4: 3.75
-    - _Saturation: 1
+    - _Param1: 3.55
+    - _Param2: -3.175
+    - _Param3: 5.08
+    - _Param4: 0.315
+    - _Param5: 1.511811
+    - _Param6: 0.47244096
+    - _Param7: 0.56692916
+    - _Param8: 0
+    - _Saturation: 0.6929134
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Tile: 3
-    - _ToneBase: 18.27
+    - _Tile: 2.511811
+    - _ToneBase: 5.937008
     - _ToneMove: 0
     - _ToneSpeed: 0
     - _UVSec: 0
