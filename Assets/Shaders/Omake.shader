@@ -23,6 +23,8 @@
 		_Param4("Param5", float) = 0.0
 		_Param6("Param6", float) = 0.0
 		_Param7("Param7", float) = 0.0
+
+		_Test("Test", float) = 0.0
 	}
 
 	SubShader
@@ -44,6 +46,7 @@
 			float _ToneBase, _ToneSpeed, _ToneMove;
 			float _Param1, _Param2, _Param3, _Param4, _Param5;
 			float _CircleSize, _Param6, _Param7;
+			float _Test;
 			
 			// HSVからRGBに変換
 			fixed4 hsv2rgb(float h, float s, float v)
@@ -57,7 +60,8 @@
 
 			fixed4 frag (v2f_img i) : SV_Target
 			{
-				float2 pos = i.uv;
+				float2 pos = i.pos.xy / _ScreenParams.xy;
+				float rate = _ScreenParams.x / _ScreenParams.y;
 
 				// なんとなく歪ませる
 				pos.y += sin((i.uv.x - 0.5 + _Param6 * _Time.x) * _Param5) * _Param7;
@@ -69,6 +73,7 @@
 
 				// 0.0〜1.0 の範囲の pos を -1.0〜1.0 の範囲になるよう変換
 				pos = pos * 2.0 - 1.0;
+				pos.x *= rate;
 
 				// 円を描く
 				float c = 1.0 - length(pos);

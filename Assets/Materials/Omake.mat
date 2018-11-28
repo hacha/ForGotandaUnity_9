@@ -56,34 +56,35 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
-    - _CircleSize: 0.44094488
-    - _CircleSpeed: 1
+    - _CircleSize: 0.37795275
+    - _CircleSpeed: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _HueMax: 0.62992126
-    - _HueMin: 0.25984251
+    - _HueMax: 1
+    - _HueMin: 0
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Param1: 3.55
-    - _Param2: -3.175
-    - _Param3: 5.08
-    - _Param4: 0.315
-    - _Param5: 1.511811
-    - _Param6: 0.47244096
-    - _Param7: 0.56692916
+    - _Param1: 0
+    - _Param2: 0
+    - _Param3: 0
+    - _Param4: 0
+    - _Param5: 0
+    - _Param6: 0
+    - _Param7: 0.007874016
     - _Param8: 0
-    - _Saturation: 0.6929134
+    - _Saturation: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Tile: 2.511811
-    - _ToneBase: 5.937008
+    - _Test: 0
+    - _Tile: 1.107874
+    - _ToneBase: 9.102362
     - _ToneMove: 0
     - _ToneSpeed: 0
     - _UVSec: 0

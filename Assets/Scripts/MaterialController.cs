@@ -7,10 +7,11 @@ public class MaterialController : MonoBehaviour
 	[SerializeField]
 	NanoKontrol2 nk;
 
+	[SerializeField]
 	Material mat;
 
 	[SerializeField]
-	float SaturationMax, ValueMax, CircleSpeedMax, CircleSizeRate, TileMax, ToneMax;
+	float SaturationMax, ValueMax, CircleSpeedMax, CircleSizeRate, TileMin, TileMax, ToneMax;
 	[SerializeField]
 	float Param1Rate, Param2Rate, Param3Rate, Param4Rate, Param5Rate, Param6Rate, Param7Rate, Param8Rate;
 	[SerializeField]
@@ -18,11 +19,9 @@ public class MaterialController : MonoBehaviour
 
 	const float Slider7Offset = 1.0f;
 	const float ToneMin = 2.0f;
-	const float TileMin = 1.0f;
 
 	void Start ()
 	{
-		mat = GetComponent<Renderer>().sharedMaterial;
 		nk.valueChangedFunctions.Add (ValueChanged);
 		nk.keyPushedFunctions.Add (KeyPushed);
 	}
@@ -99,6 +98,9 @@ public class MaterialController : MonoBehaviour
 				break;
 			case "S4" :
 				mat.SetFloat("_ToneBase", 9999.0f);
+				break;
+			case "R4" :
+				mat.SetFloat("_Tile", 1.0f);
 				break;
 			case "S5" :
 				mat.SetFloat("_Param1", 0.0f);
